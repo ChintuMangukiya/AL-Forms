@@ -1,4 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ export class AppComponent {
     const suggestedName = 'Superuser';
   }
 
-  onSubmit(f: ElementRef){
+  onSubmit(f: NgForm){
     console.log(f);
   }
 }
