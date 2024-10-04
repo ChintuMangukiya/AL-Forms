@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   suggestUserName() {
     const suggestedName = 'Superuser';
+  }
+
+  onSubmit(f: ElementRef){
+    console.log(f);
   }
 }
